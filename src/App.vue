@@ -1,12 +1,12 @@
 <template>
-  <Currency/>
+  <ToDoList/>
 </template>
 
 <script>
-import Currency from "./Currency";
+import ToDoList from "./ToDoList";
 
 export default {
-  components: {Currency},
+  components: {ToDoList},
 
 }
 </script>
