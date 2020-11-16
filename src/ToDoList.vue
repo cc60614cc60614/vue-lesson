@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input v-model="text">
+        <input v-model="text" ref="ipt">
         <button @click="add">submit</button>
         <ul>
             <li 
@@ -43,7 +43,10 @@ export default {
             }
             this.list.push(item)
             this.text=''
-        }
+        },
+    },
+    mounted(){
+        this.$refs.ipt.focus()
     }
 }
 </script>
