@@ -31,7 +31,7 @@
 </template>
 
 <script>
-// import users from "./users.json";
+ import users from "./users.json";
 
 export default {
     data:() =>({
@@ -73,9 +73,10 @@ export default {
         },
     },
     mounted(){
-        fetch('http://10.2.1.127/users.json')
-        .then((response) => response.json())
-        .then((data) => (this.users = data));
+        this.users = users
+        //fetch('http://10.2.1.127/users.json')
+        //.then((response) => response.json())
+        //.then((data) => (this.users = data));
     }
 }</script>
 <style>
